@@ -60,12 +60,12 @@ const CustomCursor = () => {
     <>
       <div
         ref={dotRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9999] hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500 md:block"
+        className="pointer-events-none fixed left-0 top-0 z-9999 hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500 md:block"
       />
 
       <div
         ref={ringRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9998] hidden h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-400/60 transition-[width,height,background-color,border-color] duration-300 md:block"
+        className="pointer-events-none fixed left-0 top-0 z-9998 hidden h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-400/60 transition-[width,height,background-color,border-color] duration-300 md:block"
       />
     </>
   );

@@ -23,11 +23,11 @@ const Navbar = () => {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/70 backdrop-blur-md">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-        {/* Logo */}
+
         <a
           href="#home"
           onClick={closeMenu}
-          className="relative block h-10 w-[120px]"
+          className="relative block h-10 w-30"
         >
           <Image
             src="/logo/husnain.png"
@@ -39,7 +39,6 @@ const Navbar = () => {
           />
         </a>
 
-        {/* Desktop Navigation */}
         <div className="hidden items-center gap-7 md:flex lg:gap-8">
           {navLinks.map((link) => (
             <a
@@ -52,7 +51,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
@@ -60,14 +58,13 @@ const Navbar = () => {
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
         >
-          {/* Top line */}
+
           <span
             className={`absolute h-0.5 w-5 bg-white transition-all duration-300 ease-in-out ${
               isOpen ? "rotate-45" : "-translate-y-1.5"
             }`}
           />
 
-          {/* Bottom line */}
           <span
             className={`absolute h-0.5 w-5 bg-white transition-all duration-300 ease-in-out ${
               isOpen ? "-rotate-45" : "translate-y-1.5"
@@ -76,7 +73,6 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Navigation */}
       <div
         className={`grid transition-all duration-500 ease-in-out md:hidden ${
           isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
@@ -103,7 +99,6 @@ const Navbar = () => {
                 </a>
               ))}
 
-              {/* Mobile CTA */}
               <a
                 href="#contact"
                 onClick={closeMenu}
