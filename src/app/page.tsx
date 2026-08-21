@@ -1,9 +1,22 @@
-import Image from "next/image";
-
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import Whatido from "./components/WhatIDo";
+import StatsSection from "./components/StatsSection";
+import ProjectsSection from "./components/ProjectsSection";
+import Resume from "./components/Resume"
+import TeamMembers from "./components/TeamMembers";
+import BlogSection from "./components/BlogSection";
 export default function Home() {
   return (
-    <div>
-      Hello! This is my portfolio website. I am a software developer with a passion for creating innovative solutions. Please explore my projects and feel free to reach out to me for collaborations or inquiries.
-    </div>
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <Whatido/>
+      <StatsSection/>
+      <ProjectsSection/>
+      <Resume/>
+      <TeamMembers/>
+      <BlogSection/>
+    </main>
   );
 }
