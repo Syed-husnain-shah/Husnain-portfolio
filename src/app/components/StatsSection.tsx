@@ -64,19 +64,30 @@ const StatsSection = () => {
     return (
         <section
             ref={sectionRef}
-            className="relative overflow-hidden bg-black py-24 sm:py-28 lg:py-32"
+            className="relative isolate overflow-hidden bg-black py-24 sm:py-28 lg:py-32"
         >
+            {/* Background Image */}
             <div
-                className="absolute inset-0 scale-110 bg-cover bg-center will-change-transform"
+                aria-hidden="true"
+                className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage: "url('/images/counter-bg.jpg')",
-                    transform: `translateY(${scrollY * 0.12}px)`,
+                    transform: `translateY(${scrollY * 0.08}px) scale(1.08)`,
+                    willChange: "transform",
                 }}
             />
 
-            <div className="absolute inset-0 bg-black/75" />
+            {/* Light Dark Overlay */}
+            <div
+                aria-hidden="true"
+                className="absolute inset-0 -z-[5] bg-black/35"
+            />
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/80" />
+            {/* Light Gradient Overlay */}
+            <div
+                aria-hidden="true"
+                className="absolute inset-0 -z-[4] bg-gradient-to-b from-black/10 via-black/25 to-black/45"
+            />
 
             <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-8">
                 <div className="grid grid-cols-2 gap-y-12 sm:grid-cols-4 sm:gap-y-0">
