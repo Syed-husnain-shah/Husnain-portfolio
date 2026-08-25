@@ -57,9 +57,9 @@ const HeroSection = () => {
             id="home"
             className="relative flex min-h-screen items-center overflow-hidden bg-black pt-20"
         >
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/5 blur-[140px]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[550px] w-[550px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/[0.035] blur-[140px]" />
 
-            <div className="pointer-events-none absolute inset-0 opacity-40">
+            <div className="pointer-events-none absolute inset-0 opacity-30">
                 <span className="absolute left-[10%] top-[20%] h-1 w-1 rounded-full bg-white" />
                 <span className="absolute left-[20%] top-[70%] h-1.5 w-1.5 rounded-full bg-blue-400" />
                 <span className="absolute right-[15%] top-[25%] h-1 w-1 rounded-full bg-white" />
@@ -68,8 +68,9 @@ const HeroSection = () => {
                 <span className="absolute bottom-[20%] left-[60%] h-1 w-1 rounded-full bg-white" />
             </div>
 
-            <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-10 px-6 py-20 sm:py-24 lg:flex-row lg:gap-0 lg:px-8">
+            <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 py-20 sm:py-24 lg:flex-row lg:gap-8 lg:px-8">
 
+                {/* LEFT CONTENT */}
                 <div
                     className={`w-full max-w-5xl transition-all duration-[1200ms] ease-out lg:w-[58%] ${isLoaded
                             ? "translate-y-0 opacity-100"
@@ -126,37 +127,31 @@ const HeroSection = () => {
                     >
                         <Link
                             href="#portfolio"
-                            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/10 hover:shadow-[0_10px_35px_rgba(59,130,246,0.18)]"
+                            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-bold text-white transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/10"
                         >
-                            <span className="absolute inset-0 origin-left scale-x-0 bg-gradient-to-r from-blue-500/20 via-blue-400/10 to-transparent transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                            <span className="absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-700 group-hover:scale-x-100" />
 
-                            <span className="relative z-10 transition-colors duration-500 group-hover:text-blue-100">
+                            <span className="relative z-10">
                                 View My Work
                             </span>
 
-                            <span className="relative z-10 flex h-6 w-6 items-center justify-center overflow-hidden rounded-full bg-white text-black transition-all duration-500 group-hover:rotate-[-45deg] group-hover:scale-110 group-hover:bg-black group-hover:text-white">
+                            <span className="relative z-10 flex h-6 w-6 items-center justify-center rounded-full bg-white text-black transition-all duration-500 group-hover:rotate-[-45deg]">
                                 <FaArrowRight />
                             </span>
                         </Link>
 
                         <a
                             href="#"
-                            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/10 hover:shadow-[0_10px_35px_rgba(59,130,246,0.18)]"
+                            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-bold text-white transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/10"
                         >
-                            <span className="absolute inset-0 origin-left scale-x-0 bg-gradient-to-r from-blue-500/20 via-blue-400/10 to-transparent transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                            <span className="absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-700 group-hover:scale-x-100" />
 
-                            <span className="relative z-10 transition-colors duration-500 group-hover:text-blue-100">
+                            <span className="relative z-10">
                                 Download CV
                             </span>
 
-                            <span className="relative z-10 flex h-5 w-5 items-center justify-center overflow-hidden">
-                                <span className="transition-all duration-500 ease-out group-hover:-translate-y-6 group-hover:opacity-0">
-                                    <MdOutlineFileDownload size={20} />
-                                </span>
-
-                                <span className="absolute translate-y-6 text-blue-400 opacity-0 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
-                                    <MdOutlineFileDownload size={20} />
-                                </span>
+                            <span className="relative z-10">
+                                <MdOutlineFileDownload size={20} />
                             </span>
                         </a>
                     </div>
@@ -177,50 +172,54 @@ const HeroSection = () => {
                             href="https://github.com/Syed-husnain-shah"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-gray-500 transition-colors duration-300 hover:text-white"
+                            className="text-sm text-gray-500 transition-colors hover:text-white"
                         >
                             GitHub
                         </a>
 
                         <a
-                            href="https://www.linkedin.com/in/syed-husnain-shah/"
+                            href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-gray-500 transition-colors duration-300 hover:text-white"
+                            className="text-sm text-gray-500 transition-colors hover:text-white"
                         >
                             LinkedIn
                         </a>
                     </div>
                 </div>
 
+                {/* RIGHT IMAGE */}
                 <div
-                    className={`relative flex w-full items-center justify-center transition-all duration-[1500ms] delay-300 ease-out lg:w-[42%] lg:justify-end ${isLoaded
-                            ? "translate-x-0 scale-100 opacity-100"
-                            : "translate-x-10 scale-[0.96] opacity-0"
-                        }`}
+                    className={`relative flex w-full items-center justify-center lg:w-[42%] lg:justify-end ${isLoaded
+                            ? "translate-x-0 opacity-100"
+                            : "translate-x-10 opacity-0"
+                        } transition-all duration-1000 ease-out`}
                 >
-                    <div className="absolute right-0 top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-blue-600/[0.12] blur-[120px]" />
+                    <div className="relative h-[500px] w-[380px] sm:h-[540px] sm:w-[410px] lg:h-[570px] lg:w-[430px]">
 
-                    <div className="relative flex h-[520px] w-[390px] items-center justify-center sm:h-[620px] sm:w-[460px] lg:h-[700px] lg:w-[520px]">
-                        <div className="absolute inset-x-[5%] bottom-[8%] h-[80%] rounded-[45%] bg-blue-500/[0.04] blur-[60px]" />
+                        {/* WHITE CIRCLE */}
+                        <div className="absolute bottom-[7%] left-1/2 h-[310px] w-[310px] -translate-x-1/2 rounded-full bg-white sm:h-[340px] sm:w-[340px] lg:h-[365px] lg:w-[365px]" />
 
-                        <div className="absolute right-[8%] top-[15%] h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_25px_rgba(59,130,246,1)]" />
+                        {/* BLUE BORDER */}
+                        <div className="absolute bottom-[7%] left-1/2 h-[310px] w-[310px] -translate-x-1/2 rounded-full border-[7px] border-blue-500 sm:h-[340px] sm:w-[340px] lg:h-[365px] lg:w-[365px]" />
 
-                        <div className="absolute left-[7%] top-[30%] h-1.5 w-1.5 rounded-full bg-white/80 shadow-[0_0_15px_rgba(255,255,255,0.8)]" />
-
-                        <Image
-                            src="/images/husnain.png"
-                            alt="Husnain"
-                            width={700}
-                            height={900}
-                            priority
-                            sizes="(max-width: 640px) 390px, (max-width: 1024px) 460px, 520px"
-                            className="relative z-10 h-[115%] w-auto max-w-none object-contain object-center drop-shadow-[0_25px_60px_rgba(0,0,0,0.65)]"
-                        />
+                        {/* IMAGE */}
+                        <div className="absolute bottom-[7%] left-1/2 z-10 h-[365px] w-[365px] -translate-x-1/2 sm:h-[340px] sm:w-[340px] lg:h-[365px] lg:w-[365px]">
+                            <Image
+                                src="/images/husnain.png"
+                                alt="Husnain"
+                                width={520}
+                                height={720}
+                                priority
+                                sizes="365px"
+                                className="absolute bottom-0 left-1/2 h-[145%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
 
+            {/* SCROLL INDICATOR */}
             <Link
                 href="#about"
                 className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-gray-500 transition-colors duration-300 hover:text-white sm:flex"
