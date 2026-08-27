@@ -73,14 +73,14 @@ const HeroSection = () => {
                 {/* LEFT CONTENT */}
                 <div
                     className={`w-full max-w-5xl transition-all duration-[1200ms] ease-out lg:w-[58%] ${isLoaded
-                            ? "translate-y-0 opacity-100"
-                            : "translate-y-8 opacity-0"
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-8 opacity-0"
                         }`}
                 >
                     <div
                         className={`mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 backdrop-blur-sm transition-all duration-1000 ease-out ${isLoaded
-                                ? "translate-y-0 opacity-100"
-                                : "-translate-y-5 opacity-0"
+                            ? "translate-y-0 opacity-100"
+                            : "-translate-y-5 opacity-0"
                             }`}
                     >
                         <span className="relative flex h-2.5 w-2.5">
@@ -95,8 +95,8 @@ const HeroSection = () => {
 
                     <h1
                         className={`text-3xl font-bold leading-[1.08] tracking-tight text-white transition-all duration-[1200ms] delay-150 ease-out sm:text-4xl md:text-5xl lg:text-6xl ${isLoaded
-                                ? "translate-y-0 opacity-100"
-                                : "translate-y-8 opacity-0"
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-8 opacity-0"
                             }`}
                     >
                         Hi, I&apos;m{" "}
@@ -110,8 +110,8 @@ const HeroSection = () => {
 
                     <p
                         className={`mt-7 max-w-2xl text-base leading-7 text-gray-400 transition-all duration-[1200ms] delay-300 ease-out sm:text-lg ${isLoaded
-                                ? "translate-y-0 opacity-100"
-                                : "translate-y-8 opacity-0"
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-8 opacity-0"
                             }`}
                     >
                         I create modern, responsive and engaging websites with
@@ -121,8 +121,8 @@ const HeroSection = () => {
 
                     <div
                         className={`mt-8 flex flex-wrap items-center gap-4 transition-all duration-[1200ms] delay-500 ease-out ${isLoaded
-                                ? "translate-y-0 opacity-100"
-                                : "translate-y-8 opacity-0"
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-8 opacity-0"
                             }`}
                     >
                         <Link
@@ -141,8 +141,9 @@ const HeroSection = () => {
                         </Link>
 
                         <a
-                            href="#"
-                            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-bold text-white transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/10"
+                            href="CV/husnain-cv.pdf"
+                            download
+                            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/3 px-7 py-3.5 text-sm font-bold text-white transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/10"
                         >
                             <span className="absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-700 group-hover:scale-x-100" />
 
@@ -158,8 +159,8 @@ const HeroSection = () => {
 
                     <div
                         className={`mt-14 flex items-center gap-6 transition-all duration-[1200ms] delay-700 ease-out ${isLoaded
-                                ? "translate-y-0 opacity-100"
-                                : "translate-y-6 opacity-0"
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-6 opacity-0"
                             }`}
                     >
                         <span className="text-xs font-medium uppercase tracking-[0.2em] text-gray-600">
@@ -191,8 +192,8 @@ const HeroSection = () => {
                 {/* RIGHT IMAGE */}
                 <div
                     className={`relative flex w-full items-center justify-center lg:w-[42%] lg:justify-end ${isLoaded
-                            ? "translate-x-0 opacity-100"
-                            : "translate-x-10 opacity-0"
+                        ? "translate-x-0 opacity-100"
+                        : "translate-x-10 opacity-0"
                         } transition-all duration-1000 ease-out`}
                 >
                     <div className="relative h-[500px] w-[380px] sm:h-[540px] sm:w-[410px] lg:h-[570px] lg:w-[430px]">
@@ -204,7 +205,7 @@ const HeroSection = () => {
                         <div className="absolute bottom-[7%] left-1/2 h-[310px] w-[310px] -translate-x-1/2 rounded-full border-[7px] border-blue-500 sm:h-[340px] sm:w-[340px] lg:h-[365px] lg:w-[365px]" />
 
                         {/* IMAGE */}
-                        <div className="absolute bottom-[7%] left-1/2 z-10 h-[365px] w-[365px] -translate-x-1/2 sm:h-[340px] sm:w-[340px] lg:h-[365px] lg:w-[365px]">
+                        <div className="absolute bottom-[7%] left-1/2 z-10 h-[365px] w-[365px] -translate-x-1/2 sm:h-85 sm:w-85 lg:h-91.25 lg:w-91.25">
                             <Image
                                 src="/images/husnain.png"
                                 alt="Husnain"
@@ -228,7 +229,7 @@ const HeroSection = () => {
                     Scroll
                 </span>
 
-                <span className="h-10 w-px bg-gradient-to-b from-gray-500 to-transparent" />
+                <span className="h-10 w-px bg-linear-to-b from-gray-500 to-transparent" />
             </Link>
         </section>
     );
