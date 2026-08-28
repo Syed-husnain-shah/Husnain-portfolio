@@ -5,7 +5,7 @@ import StatsSection from "./components/StatsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Resume from "./components/Resume"
 import TeamMembers from "./components/TeamMembers";
-import BlogSection from "./components/BlogSection";
+
 import ContactSection from "./components/ContactSection";
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <ProjectsSection/>
       <Resume/>
       <TeamMembers/>
-      <BlogSection/>
+
       <ContactSection/>
     </main>
   );
