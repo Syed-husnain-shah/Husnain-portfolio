@@ -21,30 +21,30 @@ const projects = [
         live: "https://nexto-lvug.vercel.app/",
     },
     {
-        title: "Creative Website",
+        title: "DevEvents",
         description:
-            "A modern responsive website focused on clean design, smooth interactions and professional user experience.",
-        image: "/images/nexto-responsive.png",
+            "DevEvent is a modern developer events platform designed to help users discover and explore hackathons, meetups, conferences, and other tech events in one place. The application provides an intuitive interface for browsing featured events and includes functionality for creating and managing developer-focused events.",
+        image: "/images/devEvents.jpeg",
         technologies: [
             { name: "Next.js", icon: SiNextdotjs },
             { name: "React", icon: SiReact },
             { name: "Tailwind CSS", icon: SiTailwindcss },
         ],
         github: "#",
-        live: "#",
+        live: "https://devevents-beryl.vercel.app/",
     },
     {
-        title: "Modern Portfolio",
+        title: "Sale.Io",
         description:
-            "A responsive portfolio experience designed with a modern layout, interactive sections and clean visual details.",
-        image: "/images/nexto-responsive.png",
+            "A modern portfolio website built with Next.js, React, and Tailwind CSS, showcasing projects, skills, and experience in a clean and responsive design.",
+        image: "/images/saleIo.png",
         technologies: [
             { name: "Next.js", icon: SiNextdotjs },
             { name: "React", icon: SiReact },
             { name: "Tailwind CSS", icon: SiTailwindcss },
         ],
         github: "#",
-        live: "#",
+        live: "https://saleio-sigma.vercel.app/",
     },
 ];
 
